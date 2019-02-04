@@ -1,0 +1,5 @@
+[user]
+	email = david.proctor@yale.edu
+	name = Davey Proctor
+[core]
+	excludesfile = ~/.gitignore_global
