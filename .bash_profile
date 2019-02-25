@@ -134,9 +134,19 @@ export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 source /usr/local/bin/virtualenvwrapper.sh
+# Working with ipykernel, per https://anbasile.github.io/programming/2017/06/25/jupyter-venv/
+ipySetup() {
+    if [ $# -eq 0 ]
+    then
+        echo "Usage: be in (venv) and pass in projectname, please"
+    else
+        pip install ipykernel
+        ipython kernel install --user --name=$1
+    fi
+}
 
 # python modules
-export PYTHONPATH="${PYTHONPATH}:~/pylibs"
+export PYTHONPATH="${PYTHONPATH}:~/pylibs:/Users/daveyproctor/Library/Python/3.7/bin"
 # classes
 # AI
 #export PYTHONPATH="${PYTHONPATH}:~/Drive/Yale/3/fall/AI/aima"
@@ -197,3 +207,4 @@ alias jup="jupyter notebook"
 # fi
 # unset __conda_setup
 # <<< conda init <<<
+. /usr/local/anaconda3/etc/profile.d/conda.sh

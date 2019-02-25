@@ -18,6 +18,7 @@ set completeopt-=preview
 Plugin 'lervag/vimtex'
 let g:vimtex_compiler_latexmk = {'callback' : 0}
 let g:vimtex_view_automatic = 0
+let maplocalleader = "\\"
 
 Plugin 'lifepillar/vim-solarized8' 
 
