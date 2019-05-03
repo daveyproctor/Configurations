@@ -82,6 +82,8 @@ alias jupssh="ssh -L $LOCAL"
 
 # sublime text
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+# skim
+alias skim="/Applications/Skim.app/Contents/MacOS/Skim"
 
 # prompt config in which we just get the current dir. see http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
 export PS1='\W$ '
@@ -120,9 +122,9 @@ fh1() {
 }
 
 ## C
-export CC=clang
+# export CC=clang
 #export CFLAGS="-g3 -std=c99 -Wall -Werror -Wextra -Wno-sign-compare -Wshadow -ggdb -fsanitize=integer -fsanitize=undefined -O0"
-export LDLIBS="-lcs50 -lm -lncurses"
+# export LDLIBS="-lcs50 -lm -lncurses"
 
 ## Python
 # for virtual environment for python w cs50 per Kareem.

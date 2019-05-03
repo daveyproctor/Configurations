@@ -1,3 +1,6 @@
-PKG_LIBS=-L/usr/local/opt/gettext/lib
-CFLAGS=-I/usr/local/opt/gsl/include
-LDFLAGS=-L/usr/local/opt/gsl/lib -lgsl -lgslcblas
+# PKG_LIBS=-L/usr/local/opt/gettext/lib
+# CFLAGS=-I/usr/local/opt/gsl/include
+# LDFLAGS=-L/usr/local/opt/gsl/lib -lgsl -lgslcblas
+# 
+# CFLAGS += /usr/local/opt/libpng/include
+# CFLAGS += /usr/local/opt/jpeg/include
